@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckCircle, Users, Award, TrendingUp, Clock } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
+import ContactCTA from '../components/ContactCTA';
 
 const AboutPage: React.FC = () => {
   return (
@@ -246,20 +247,7 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="section bg-blue-800 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Start Your Digital Transformation?</h2>
-          <p className="max-w-2xl mx-auto mb-8 text-blue-100">
-            Connect with our team to discuss how FUSION IT GLOBAL SOLUTIONS can help 
-            implement the right technology solutions for your business.
-          </p>
-          <a href="/contact" className="btn bg-transparent border-2 border-white hover:bg-blue-700">
-            Contact Us Today
-          </a>
-        </div>
-      </section>
+      <ContactCTA />
     </div>
   );
 };
